@@ -1,9 +1,9 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
-const route = require("./src/routes/route")
+const route = require("./routes/route")
 const app = express()
-const {multererror} =require("./src/multer-error/error")
+const {multererror} =require("./multer-error/error")
 const cors = require("cors")
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }));

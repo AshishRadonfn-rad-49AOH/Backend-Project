@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const userController = require("../controllers/userController")
-const {cartCreation, getCart, updateCart, deleteCart} = require("../controllers/cartController")
-const {orderCreation, updateOrder} = require("../controllers/orderController")
+const userController = require("../controller/userController")
+const {cartCreation, getCart, updateCart, deleteCart} = require("../controller/cartController")
+const {orderCreation, updateOrder} = require("../controller/orderController")
 const {upload} = require("../AWS/s3")
 const { verifyTokenAndAuthorization } =require("../middleware/auth")
-const {updateProduct, createProduct, getProduct, getProductById, deleteProductById} = require('../controllers/productController')
+const {updateProduct, createProduct, getProduct, getProductById, deleteProductById} = require('../controller/productController')
 
 //===========================================================================================================
 
